@@ -32,16 +32,3 @@ export default function Home() {
   );
 }
 
-{/* <div className="h-screen bg-gray-100 flex items-center justify-center">
-<div className="text-center">
-  <h1 className="text-3xl font-semibold text-gray-800 mb-4">
-    Browse Our Blog Collection
-  </h1>
-  <Link 
-    href="/blogs" 
-    className="px-6 py-3 mt-4 bg-zinc-600 text-white rounded-lg hover:bg-zinc-700 transition duration-300"
-  >
-    Explore Blogs
-  </Link>
-</div>
-</div> */}
