@@ -33,6 +33,7 @@ const AddNewBlog = () => {
   const router = useRouter()
   // Handles saving the blog data
   const handleSaveBlogData = async () => {
+    const URL = process.env.NEXT_PUBLIC_API_URL
     setLoading(true);
     try {
       const formData = new FormData();
@@ -54,7 +55,7 @@ const AddNewBlog = () => {
       //   console.log(pair[0] + ": " + pair[1]);  // Log fields
       // }
 
-      const response = await fetch("/api/add-blog", {
+      const response = await fetch(`${URL}/api/add-blog`, {
         method: "POST",
         // headers: { 'Content-Type': 'application/json' },
         // body: JSON.stringify(formData),
